@@ -1,4 +1,4 @@
-<img src="client/public/bank.png" width='100'>
+<img src="public/bank.png" width='100'>
 
 # Name
 
