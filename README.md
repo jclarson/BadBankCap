@@ -19,15 +19,36 @@ MERN stack (MongoDB, Express, React, and Node.JS).
 
 # Installation
 
-Download the files.  Start a MongoDB database listening on port 27017. Run node index.js from the directory to which the files were downloaded.
+Download the files.
+
+Start a MongoDB database listening on port 27017.
+
+In the download directory, run npm install.
 
 # Usage
+
+Since this is deployed on Heroku, you'll need to change the mongodb setting to point to your local database.
+
+- In the dal.js file:
+  - Uncomment line 2
+  - On line 5, change the first parameter of MongoClient.connect() from `process.env.MONGODB_URL` to just `url`
+
+Run node index.js from the directory to which the files were downloaded.
 
 After Installation has been completed, open a browser to localhost:3000.
 
 # Features
 
 Basic security requiring email and password to authenticate.
+
+All users can create new user accounts, deposit to and withdraw from checking and savings accounts, and transfer money between the 2 accounts.
+
+Standard users can see all data for their own account.
+
+Admin users:
+- Can see all data for all accounts.
+- Create admin user accounts when using the create new account page.
+- Are denoted visually when logged in with `(A)` after their name in the navbar.
 
 # Support
 
